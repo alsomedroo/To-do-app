@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px; /* Adjust as needed */
+            height: 100%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .todo-form {
+            display: flex;
+            gap: 10px;
+            width: calc(100% - 40px); /* Full width minus padding */
+            padding: 0 20px; /* Padding of 20px on each side */
+        }
+
+        #todo-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        #add-todo {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        #add-todo:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            justify-content: space-between;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        .button-set {
+            display: flex;
+            gap: 5px; /* Reduce the gap between buttons */
+        }
+
+        button.remove, button.done {
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        button.remove {
+            background-color: #dc3545;
+        }
+
+        button.remove:hover {
+            background-color: #c82333;
+        }
+
+        button.done {
+            background-color: #28a745;
+        }
+
+        button.done:hover {
+            background-color: #218838;
+        }
+
+        li.done {
+            text-decoration: line-through;
+        }
+        
+        .icon {
+            font-family: 'Font Awesome 5 Free'; 
+            font-weight: 900; /* Use solid style */
+        }
+
+        .icon-trash-alt::before {
+            content: "\f2ed"; /* Font Awesome trash icon code */
+        }
+                /* Add to your existing CSS */
+        .section {
+            margin-top: 20px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+        }
+        /* Add to your existing CSS */
+.time-highlight {
+    font-weight: bold;
+    color: #007bff; /* Highlight color for time */
+}
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <div class="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a new task">
+            <button id="add-todo">Add</button>
+        </div>
+        <ul id="todo-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
