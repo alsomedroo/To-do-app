@@ -7,7 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #121212; /* Dark background color */
+            color: #e0e0e0; /* Light text color */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -16,17 +17,18 @@
         }
 
         .container {
-            background: #fff;
+            background: #1e1e1e; /* Darker background for container */
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow */
             width: 100%;
-            max-width: 600px; /* Adjust as needed */
+            max-width: 600px;
             height: 100%;
         }
 
         h1 {
             text-align: center;
+            color: #ffffff; /* White color for the heading */
         }
 
         .todo-form {
@@ -39,8 +41,10 @@
         #todo-input {
             flex: 1;
             padding: 10px;
-            border: 1px solid #ddd;
+            border: 1px solid #333; /* Dark border color */
             border-radius: 4px;
+            background-color: #2c2c2c; /* Dark background for input */
+            color: #e0e0e0; /* Light text color */
         }
 
         #add-todo {
@@ -65,8 +69,9 @@
             display: flex;
             align-items: center;
             padding: 10px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #333; /* Dark border color */
             justify-content: space-between;
+            background-color: #1e1e1e; /* Darker background for list items */
         }
 
         li:last-child {
@@ -115,7 +120,8 @@
         .icon-trash-alt::before {
             content: "\f2ed"; /* Font Awesome trash icon code */
         }
-                /* Add to your existing CSS */
+
+        /* Additional CSS */
         .section {
             margin-top: 20px;
         }
@@ -123,13 +129,11 @@
         .section h2 {
             margin-bottom: 10px;
         }
-        /* Add to your existing CSS */
-.time-highlight {
-    font-weight: bold;
-    color: #007bff; /* Highlight color for time */
-}
 
-
+        .time-highlight {
+            font-weight: bold;
+            color: #007bff; /* Highlight color for time */
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
